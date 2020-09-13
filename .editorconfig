@@ -1,0 +1,13 @@
+﻿[*.cs]
+
+# CA1707: Remove the underscores from assembly name CSharp_Tips.
+dotnet_diagnostic.CA1707.severity = none
+
+# CA1801: Parameter args of method Main is never used. Remove the parameter or use it in the method body.
+dotnet_diagnostic.CA1801.severity = error
+
+# CA1303: Do not pass literals as localized parameters
+dotnet_diagnostic.CA1303.severity = none
+
+# IDE0059: Unnecessary assignment of a value
+csharp_style_unused_value_assignment_preference = discard_variable:error
