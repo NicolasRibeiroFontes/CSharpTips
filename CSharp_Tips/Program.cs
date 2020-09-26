@@ -1,5 +1,5 @@
-﻿using CSharp_Tips.SOLID.LiskovSubstitutionPrinciple.Problem;
-using CSharp_Tips.SOLID.LiskovSubstitutionPrinciple.Solution;
+﻿using CSharp_Tips.SOLID.InterfaceSegregationPrinciple.Problem;
+using CSharp_Tips.SOLID.InterfaceSegregationPrinciple.Solution;
 using CSharp_Tips.Tools;
 using System;
 
@@ -10,8 +10,12 @@ namespace CSharp_Tips
         static void Main()
         {
             Console.WriteLine("Hello World!");
-            //Problem.Run();
+            Problem.Run();
             Solution.Run();
         }
     }
+
+    
+
+    
 }
