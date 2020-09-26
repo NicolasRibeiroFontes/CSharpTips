@@ -10,8 +10,6 @@ namespace CSharp_Tips
         static void Main()
         {
             Console.WriteLine("Hello World!");
-            Problem.Run();
-            Solution.Run();
         }
     }
 
