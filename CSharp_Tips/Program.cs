@@ -12,7 +12,7 @@ namespace CSharp_Tips
         {
             Console.WriteLine("Hello World!");
 
-            DifferenceBetweenLists diff = new DifferenceBetweenLists();
+            DifferenceBetweenListIQueryableIEnumerator diff = new DifferenceBetweenListIQueryableIEnumerator();
             diff.Start();
 
             Console.WriteLine("End Program");
