@@ -35,7 +35,7 @@ namespace CSharp_Tips.Collections
 		private void DifferenceBetweenObjects()
 		{
 			Console.WriteLine("DifferenceBetweenObjects");
-			var differences = users1.Except(users2, new IdComparer()).ToList();
+			var differences = users1.Except(users2, new IdComparer());
 			Console.WriteLine(differences.Count());
 			Console.WriteLine("END-DifferenceBetweenObjects");
 		}
