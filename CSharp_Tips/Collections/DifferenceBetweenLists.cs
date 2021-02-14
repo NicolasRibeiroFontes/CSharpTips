@@ -8,7 +8,7 @@ namespace CSharp_Tips.Collections
 	public class DifferenceBetweenLists
 	{
 		private readonly List<string> list1 = new List<string> { "name1", "name2", "name3", "name4" };
-		private readonly List<string> list2 = new List<string> { "name1", "name2" };
+		private readonly List<string> list2 = new List<string> { "name1", "name2", "name5" };
 
 		private readonly List<User> users1 = new List<User> {
 			new User { ID = 1, Name = "Name1" }, new User { ID = 2, Name = "Name2" },new User { ID = 3, Name = "Name3" },
@@ -27,7 +27,8 @@ namespace CSharp_Tips.Collections
 		private void DifferenceBetweenStrings()
 		{
 			Console.WriteLine("DifferenceBetweenStrings");
-			var differences = list1.Except(list2);
+			var differences = list1.Except(list2).ToList();
+			differences.AddRange(list2.Except(list1));
 			Console.WriteLine(differences.Count());
 			Console.WriteLine("END-DifferenceBetweenStrings");
 		}

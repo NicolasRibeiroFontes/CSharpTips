@@ -5,9 +5,6 @@ using System.Text;
 
 namespace CSharp_Tips.Collections
 {
-	//Macoratti
-	//http://www.macoratti.net/14/11/net_ieiq1.htm
-
 	public class DifferenceBetweenListIQueryableIEnumerator
 	{
 		private readonly List<Product> products1 = new List<Product> {
@@ -35,7 +32,7 @@ namespace CSharp_Tips.Collections
 			{
 				Console.WriteLine(enumerator.Current.ID + " - " + enumerator.Current.Name);
 			};
-			enumerator.Reset();
+			//enumerator.Reset();
 
 			var _result = _enumerable.First(x => x.ID == 3);
 		}
@@ -43,11 +40,11 @@ namespace CSharp_Tips.Collections
 		private void ManageIQueryable()
 		{
 			/*
-			 Enquanto consulta informações no banco de dados, IQueryable executa uma consulta Select no lado do servidor com todos os filtros. (menos trabalho, mais rápida)
+			 Enquanto consulta informações no banco de dados, 
+			IQueryable executa uma consulta Select no lado do servidor com todos os filtros. (menos trabalho, mais rápida)
 			 */
 
-			IQueryable<Product> _iqueryable = products1.Where(x => x.ID > 1).AsQueryable();
-			
+			IQueryable<Product> _iqueryable = products1.Where(x => x.ID > 1).AsQueryable();			
 			var _result = _iqueryable.First(x => x.ID == 3);
 
 		}
@@ -57,6 +54,9 @@ namespace CSharp_Tips.Collections
 			List<Product> _list = products1.Where(x => x.ID > 1).ToList();
 
 			var _result = _list.First(x => x.ID == 3);
+
+			_list.Add(new Product { ID = 10, Name = "User10" });
+
 
 		}
 	}
