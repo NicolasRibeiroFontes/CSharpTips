@@ -13,9 +13,11 @@ namespace CSharp_Tips
         static void Main()
         {
             Console.WriteLine("Hello World!");
-            
-            UpcastDowncast.Upcast();
-            UpcastDowncast.Downcast();
+
+            DifferenceBetweenRemovals.UsingRemove();
+            DifferenceBetweenRemovals.UsingRemoveAll();
+            DifferenceBetweenRemovals.UsingRemoveAt();
+            DifferenceBetweenRemovals.UsingRemoveRange();
 
             Console.ReadKey();
         }
