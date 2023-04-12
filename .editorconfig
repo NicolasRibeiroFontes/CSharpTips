@@ -11,3 +11,9 @@ dotnet_diagnostic.CA1303.severity = none
 
 # IDE0059: Unnecessary assignment of a value
 csharp_style_unused_value_assignment_preference = discard_variable:error
+
+# CA1305: Specify IFormatProvider
+dotnet_diagnostic.CA1305.severity = none
+
+# CA2241: Provide correct arguments to formatting methods
+dotnet_diagnostic.CA2241.severity = none
