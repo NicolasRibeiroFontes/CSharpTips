@@ -13,13 +13,10 @@ namespace CSharp_Tips
         static void Main()
         {
             Console.WriteLine("Hello World!");
-            Stopwatch stopwatch = Stopwatch.StartNew();
-            for (int i = 0; i < 100000; i++)
-            {
-                Console.WriteLine("Convert (10): " + ConvertParse.UsingConvert("10"));
-            }
-            stopwatch.Stop();
-            Console.WriteLine("End Program" + stopwatch.Elapsed);
+            
+            UpcastDowncast.Upcast();
+            UpcastDowncast.Downcast();
+
             Console.ReadKey();
         }
     }
